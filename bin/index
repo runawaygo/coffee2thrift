@@ -7,7 +7,7 @@ coffee2thrift = require('..')
 
 file = process.argv[2]
 
-if(fs.existSync(file)){
+if(!fs.existsSync(file)){
   console.error("Couldn't find file:"+file);
   return;
 }
