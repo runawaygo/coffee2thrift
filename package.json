@@ -3,29 +3,29 @@
   "version": "0.1.0",
   "description": "ERROR: No README.md file found!",
   "main": "index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "coffee-script": "~1.6.3",
     "mocha": "",
     "chai": ""
   },
   "scripts": {
-    "test": "make test",
-    "blanket": {
-      "pattern": "wechat/lib",
-      "data-cover-flags": {
-        "debug": false
-      }
-    },
-    "travis-cov": {
-      "threshold": 98
-    }
+    "test": "make test"
   },
-  "repository": "",
-  "author": "",
-  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/runawaygo/coffee2thrift.git"
+  },
+  "author": "Tomas Huang",
+  "license": "MIT",
   "directories": {
     "test": "test"
+  },
+  "keywords": [
+    "thrift",
+    "coffee"
+  ],
+  "bugs": {
+    "url": "https://github.com/runawaygo/coffee2thrift/issues"
   }
 }
