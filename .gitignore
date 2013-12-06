@@ -1,0 +1,7 @@
+gen*
+*.js
+*.thrift
+node_modules
+ChatService.coffeethrift
+YtxApp.coffeethrift
+.DS_Store
