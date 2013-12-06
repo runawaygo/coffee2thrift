@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+fs = require('fs')
+path = require('path')
+
+coffee2thrift = require('..')
+
+file = process.argv[2]
+
+if(fs.existSync(file)){
+  console.error("Couldn't find file:"+file);
+  return;
+}
+
+code = fs.readFileSync(file, 'utf-8')
+result = coffee2thrift.parse(code)
+
+fs.writeFile(file.replace("coffeethrift", "thrift"), result)

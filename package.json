@@ -1,19 +1,17 @@
 {
   "name": "coffee2thrift",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "ERROR: No README.md file found!",
-  "main": "index.js",
+  "main": "./index",
   "dependencies": {},
   "devDependencies": {
     "coffee-script": "~1.6.3",
     "mocha": "",
     "chai": ""
   },
-  "bin": {
-    "coffee2thrift": "./bin/coffee2thrift"
-  },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "install": "coffee -c ."
   },
   "repository": {
     "type": "git",
@@ -22,7 +20,12 @@
   "author": "Tomas Huang",
   "license": "MIT",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "lib": "./lib/coffee2thrift"
+  },
+  "bin": {
+    "c2t": "./bin/index",
+    "coffee2thrift": "./bin/index"
   },
   "keywords": [
     "thrift",
