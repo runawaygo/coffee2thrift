@@ -9,6 +9,9 @@
     "mocha": "",
     "chai": ""
   },
+  "bin": {
+    "coffee2thrift": "./bin/coffee2thrift"
+  },
   "scripts": {
     "test": "make test"
   },
@@ -27,5 +30,8 @@
   ],
   "bugs": {
     "url": "https://github.com/runawaygo/coffee2thrift/issues"
+  },
+  "engines": {
+    "node": ">= 0.8.x"
   }
 }
